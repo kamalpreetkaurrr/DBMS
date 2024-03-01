@@ -1,0 +1,35 @@
+CREATE TABLE Book (
+  BookId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  price TEXT NOT NULL
+);
+
+INSERT INTO BOOK VALUES (0001, 'Clark', '500');
+INSERT INTO BOOK VALUES (0002, 'Dave', '600');
+INSERT INTO BOOK VALUES (0003, 'Ava', '700');
+
+SELECT * FROM BOOK WHERE price = '700';
+
+CREATE TABLE author(
+  authorId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  height TEXT NOT NULL
+  );
+  
+INSERT INTO author VALUES (0001, 'Clark', '5');
+INSERT INTO author VALUES (0002, 'Dave', '6');
+INSERT INTO author VALUES (0003, 'Ava', '7');
+
+SELECT * FROM author WHERE height = '7';
+
+CREATE TABLE browser (
+  browserId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  colour TEXT NOT NULL
+  );
+  
+  INSERT INTO browser VALUES (0001, 'Clark', 'pink');
+INSERT INTO browser VALUES (0002, 'Dave', 'red');
+INSERT INTO browser VALUES (0003, 'Ava', 'green');
+
+SELECT * FROM browser WHERE colour = 'red';
